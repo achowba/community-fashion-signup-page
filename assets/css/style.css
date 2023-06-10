@@ -1,0 +1,130 @@
+body, html {
+  font-family: 'Poppins';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+#signup {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: 100vh;
+}
+
+.hero {
+  background-image: url('../img/model.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  padding: 50px;
+}
+
+.form-container>h2 {
+  font-size: 3.5em;
+  font-weight: bold;
+  line-height: 95px;
+  margin-bottom: 35px;
+}
+
+#signup-form {
+  display: grid;
+  gap: 20px;
+}
+
+#signup-form>input {
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  color: #434343;
+  font-size: 1em;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 10px 15px 2px;
+}
+
+.input-email {
+  margin-bottom: 40px;
+}
+
+:-ms-input-placeholder {
+  color: #131313;
+  font-family: 'Poppins';
+}
+
+::-ms-input-placeholder {
+  color: #131313;
+  font-family: 'Poppins';
+}
+
+::placeholder {
+  color: #131313;
+  font-family: 'Poppins';
+}
+
+.btn {
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  font-weight: 300;
+  outline: none;
+  padding: 18px;
+}
+
+.btn-create-account {
+  background-color: #0d0901;
+  border: none;
+  color: #ffffff;
+}
+
+.btn-google {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #393939;
+  color: #0d0901;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-google>img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.form-footer {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.form-footer>span {
+  background-color: #dcdcdc;
+  height: 1px;
+}
+
+.form-footer>p {
+  font-weight: 300;
+}
+
+.form-footer>p>a {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  #signup {
+    grid-template-columns: 1fr;
+  }
+
+  .hero  {
+    display: none;
+  }
+}
